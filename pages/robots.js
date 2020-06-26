@@ -24,7 +24,7 @@ const Robots = ({ robots }) => {
 Robots.getInitialProps = async () => {
 	const res = await fetch("https://jsonplaceholder.typicode.com/users");
 	const data = await res.json();
-	console.log("gis", robots);
+	console.log("gis", data);
 	return {
 		robots: data,
 	};
